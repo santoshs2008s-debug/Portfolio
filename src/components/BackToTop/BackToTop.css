@@ -1,0 +1,118 @@
+
+.back-to-top{
+
+    position:fixed;
+
+    bottom:35px;
+
+    right:35px;
+
+    width:58px;
+
+    height:58px;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    color:white;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.25);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(20px) scale(.9);
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        background .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+    z-index:9999;
+
+}
+
+.back-to-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0) scale(1);
+
+}
+
+.back-to-top:hover{
+
+    transform:translateY(-6px) scale(1.08);
+
+    background:rgba(10,132,255,.18);
+
+    border-color:rgba(10,132,255,.55);
+
+    box-shadow:
+        0 0 20px rgba(10,132,255,.35),
+        0 15px 35px rgba(10,132,255,.2);
+
+}
+
+.back-to-top:active{
+
+    transform:scale(.95);
+
+}
+
+.back-to-top svg{
+
+    transition:transform .3s;
+
+}
+
+.back-to-top:hover svg{
+
+    transform:translateY(-2px);
+
+}
+
+@media(max-width:768px){
+
+.back-to-top{
+
+    width:50px;
+
+    height:50px;
+
+    right:20px;
+
+    bottom:20px;
+
+    font-size:18px;
+
+}
+
+}

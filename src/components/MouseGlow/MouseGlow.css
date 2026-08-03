@@ -1,0 +1,88 @@
+/* Hide default cursor */
+
+body,
+a,
+button {
+    cursor: none;
+}
+
+/* ===========================
+   Premium Mouse Glow
+=========================== */
+
+.cursor-glow {
+
+    position: fixed;
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(10,132,255,.12) 0%,
+            rgba(10,132,255,.08) 25%,
+            rgba(10,132,255,.04) 45%,
+            transparent 75%
+        );
+
+    filter: blur(80px);
+
+    z-index: -1;
+
+    transition:
+        left .08s linear,
+        top .08s linear;
+
+}
+
+/* Cursor Dot */
+
+.cursor-dot {
+
+    position: fixed;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    box-shadow:
+        0 0 12px rgba(255,255,255,.9),
+        0 0 35px rgba(10,132,255,.5);
+
+    transition:
+        left .02s linear,
+        top .02s linear,
+        transform .25s ease;
+
+    z-index: 99999;
+
+}
+
+/* Hover */
+
+.cursor-dot.hover {
+
+    width: 18px;
+    height: 18px;
+
+    background: #0A84FF;
+
+    box-shadow:
+        0 0 20px rgba(10,132,255,.8),
+        0 0 45px rgba(10,132,255,.5);
+
+}

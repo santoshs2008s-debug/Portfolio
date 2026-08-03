@@ -1,0 +1,261 @@
+.experience{
+    min-height:100vh;
+    padding:120px 8%;
+    color:white;
+    position:relative;
+}
+
+.experience-header{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:80px;
+}
+
+.experience-header h2{
+
+    font-size:56px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+    background:linear-gradient(90deg,#ffffff,#8ab4ff);
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    color:transparent;
+
+}
+
+.experience-header p{
+
+    color:#9ca3af;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* Timeline */
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding-left:50px;
+
+}
+
+/* Vertical Line */
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:18px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:linear-gradient(
+        to bottom,
+        #0A84FF,
+        rgba(10,132,255,.2)
+    );
+
+}
+
+/* Timeline Item */
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:50px;
+
+}
+
+/* Circle Icon */
+
+.timeline-icon{
+
+    position:absolute;
+
+    left:-50px;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:#0A84FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:18px;
+
+    box-shadow:0 0 25px rgba(10,132,255,.4);
+
+}
+
+/* Card */
+
+.timeline-content{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    transition:.35s ease;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#0A84FF;
+
+    box-shadow:0 20px 50px rgba(10,132,255,.2);
+
+}
+
+/* Year */
+
+.timeline-content span{
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    color:#0A84FF;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+/* Role */
+
+.timeline-content h3{
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+}
+
+/* Company */
+
+.timeline-content h4{
+
+    color:#d1d5db;
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+    font-weight:500;
+
+}
+
+/* Description */
+
+.timeline-content p{
+
+    color:#b5b5b5;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.experience{
+
+padding:100px 7%;
+
+}
+
+.experience-header h2{
+
+font-size:42px;
+
+}
+
+.timeline{
+
+padding-left:35px;
+
+}
+
+.timeline::before{
+
+left:12px;
+
+}
+
+.timeline-icon{
+
+left:-35px;
+
+width:32px;
+
+height:32px;
+
+font-size:14px;
+
+}
+
+.timeline-content{
+
+padding:22px;
+
+}
+
+.timeline-content h3{
+
+font-size:22px;
+
+}
+
+.timeline-content h4{
+
+font-size:16px;
+
+}
+
+}

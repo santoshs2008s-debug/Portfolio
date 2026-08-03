@@ -1,0 +1,27 @@
+.spotlight{
+
+position:fixed;
+
+width:500px;
+height:500px;
+
+border-radius:50%;
+
+background:
+radial-gradient(circle,
+rgba(10,132,255,.18),
+transparent 70%);
+
+filter:blur(80px);
+
+transform:translate(-50%,-50%);
+
+pointer-events:none;
+
+z-index:-1;
+
+transition:
+left .08s linear,
+top .08s linear;
+
+}
