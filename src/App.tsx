@@ -12,7 +12,7 @@ import Certificates from "./components/Certificates/Certificates";
 import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import AIChat from "./components/AIChat/AIChat";
+//import AIChat from "./components/AIChat/AIChat";
 import Spotlight from "./components/Spotlight/Spotlight";
 import ScrollProgress from "./components/ScrollProgress/ScrollProgress";
 import BackToTop from "./components/BackToTop/BackToTop";
@@ -72,7 +72,7 @@ function App() {
       <Contact />
 
       <Footer />
-      <AIChat />
+      
       <BackToTop />
       
 
